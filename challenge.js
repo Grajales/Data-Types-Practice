@@ -4,7 +4,7 @@
  * console.log below in the console of your browser.
  */
 
-console.log("challenge.js has been included!");
+console.log("challenge.js has been included! again");
 
 /*
  * Prompt 1:
@@ -12,13 +12,17 @@ console.log("challenge.js has been included!");
  * Declare a variable called myFavoriteNumber on one line; assign it a value on
  * the next line.
  */
+let myFavoriteNumber = null;
+myFavoriteNumber = 10;
 
 /*
  * Prompt 2:
  *
  * Declare 3 variables using each of let, const, and var.
  */
-
+let letVar = null;
+const constNum = 7;
+var varVar = null;
 /*
  * Prompt 3:
  *
@@ -29,6 +33,12 @@ console.log("challenge.js has been included!");
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+let mathVar = 2;
+mathVar = mathVar + 10;
+mathVar = mathVar - 4;
+mathVar = mathVar * 3;
+mathVar = mathVar/7;
+mathVar = mathVar % 1;
 
 /*
  * Prompt 4:
@@ -40,6 +50,9 @@ console.log("challenge.js has been included!");
  * Create a variable called fullName and use addition to combine your firstName
  * and lastName variables.
  */
+let firstName = "Liliana";
+let lastName = "Grajales";
+let fullName = firstName + " " + lastName;
 
 /*
  * Prompt 5:
@@ -50,6 +63,9 @@ console.log("challenge.js has been included!");
  * Create a variable called message and use string interpolation to assign it
  * the value 'hello world!'.
  */
+let hello = "Hello";
+let world = "World";
+let message = `${hello} ${world}`;
 
 /*
  * Prompt 6:
@@ -59,30 +75,31 @@ console.log("challenge.js has been included!");
 
 /** A. Use loose-equals (==) to create a statement that is false */
 
+1==4;
 // Write code here
 
 /** B. Use strict equals (===) to create a statement that is true */
-
+3===3;
 // Write code here
 
 /** C. Use strict unequal (!==) to create a statement that is true */
-
+1!==4;
 // Write code here
 
 /** D. Use less than (<) to create a statement that is false */
-
+3<3;
 // Write code here
 
 /** E. Use greater than (>) to create a statement that is false */
-
+3>3;
 // Write code here
 
 /** F. Use less than or equals (<=) to create a statemetn that is true */
-
+3<=3;
 // Write code here
 
 /** G. Use greater than or equals (>=) to create a statemetn that is false */
-
+1>=4;
 // Write code here
 
 /*
@@ -100,31 +117,31 @@ let e = "Kevin";
 /** a _ b; */
 
 // Write code here
-
+a<b;
 /** c _ d; */
-
 // Write code here
-
+c>d;
 /** 'Name' ___ 'Name'; */
 
 // Write code here
-
+'Name' === 'Name';
 /** a _ b ___ c; */
 
 // Write code here
-
+a<b && b<c;
 /** a _ a ___ d; */
 
 // Write code here
-
+a==a && a<c;
 /** e ___ 'Kevin'; */
 
 // Write code here
-
+e === "Kevin";
 /** 48 ___ '48'; */
 
-// Write code here
 
+// Write code here
+48 == "48";
 /*
  * Prompt 8:
  *
@@ -138,19 +155,19 @@ d = 3000;
 e = "Jelly Bean";
 
 // a _ b;
-
+a>b;
 // c _ d;
-
+c>d;
 // 'Peanut' ___ 'Peanut';
-
+"Peanut" !== "Peanut";
 // a _ b ___ c;
-
+a<b && b<c;
 // a _ a ___ d;
-
+a==a && a<c;
 // e ___ 'Jelly Bean';
-
+e !== "Jelly Bean";
 // 48 ___ '48';
-
+48 ==="48";
 /*
  * Prompt 9:
  *
@@ -167,7 +184,9 @@ let array3 = [
   ["Marty Feldman", ["Marty Marion"]],
   ["Marty Stuart", ["Marty Janetty", ["Marty McFly"], "Marty Robbins"]]
 ];
-
+array1[2];
+array2[1][1];
+array3[1][1][1];
 /*
  * Prompt 10:
  *
@@ -175,7 +194,8 @@ let array3 = [
  */
 
 let array4 = ["a", "b", "c", "d", "e"];
-
+let secondToLast = array4.length-2;
+array4[secondToLast];
 /*
  * Prompt 11:
  *
@@ -189,10 +209,13 @@ let cathleen = ["Cathleen", 186, "New York"];
 
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Gameboy".
+thom[0]="Gameboy";
 
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
+karolin[1] =karolin[1]+1;
 
 // Change Cathleen's hometown from New York to "Gotham City".
-
+cathleen[2]= "Gotham City";
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+kristyn[2] = "Oakland";
